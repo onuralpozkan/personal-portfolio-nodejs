@@ -1,9 +1,7 @@
 const allowedOrigins = [
   process.env.ALLOWED_ORIGIN_1,
   process.env.ALLOWED_ORIGIN_2,
-  process.env.ALLOWED_ORIGIN_3,
-  process.env.ALLOWED_ORIGIN_4,
-  process.env.ALLOWED_ORIGIN_5
+  process.env.ALLOWED_ORIGIN_3
 ];
 var corsOptions = {
   origin: function (origin, callback) {
