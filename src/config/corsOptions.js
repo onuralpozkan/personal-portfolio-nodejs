@@ -1,7 +1,7 @@
 const allowedOrigins = [
-  "http://localhost:3000",
-  "http://localhost:5000/",
-  "https://www.onuralpozkan.com",
+  process.env.ALLOWED_ORIGIN_1,
+  process.env.ALLOWED_ORIGIN_2,
+  process.env.ALLOWED_ORIGIN_3
 ];
 var corsOptions = {
   origin: function (origin, callback) {

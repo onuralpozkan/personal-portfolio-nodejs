@@ -2,7 +2,6 @@ const messageModel = require("../models/message.model");
 const sendEmail = require("../utils/sendEmail");
 
 const sendMessage = async (req, res, next) => {
-  console.log("body", req.body);
   const { email, name, message } = req.body;
   const newMessage = new messageModel(req.body);
 
