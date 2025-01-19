@@ -15,6 +15,7 @@ const corsOptions = require("./src/config/corsOptions");
 const limiter = require("./src/middlewares/rateLimit");
 const port = process.env.PORT || 5001;
 
+debugger;
 app.use(cors(corsOptions));
 app.use(express.json({ limit: "5mb" }));
 app.use(express.urlencoded({ limit: "5mb", extended: true }));

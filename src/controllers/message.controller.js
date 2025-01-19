@@ -3,6 +3,7 @@ const sendEmail = require("../utils/sendEmail");
 
 const sendMessage = async (req, res, next) => {
   const { email, name, message } = req.body;
+ 
   const newMessage = new messageModel(req.body);
 
   await newMessage
